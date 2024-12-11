@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    text-align:center;
+    background-color:black;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+ 
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+.slider-container {
+    
+  position: relative;
+   width: 70%;  /* You can adjust the width as needed */
+   margin: 0 auto;
+   overflow: hidden;  /* Hide anything outside of the container */
+}
+
+.slider {
+display: flex;  /* Arrange images in a row */
+transition: transform 0.6s ease;  /* Smooth sliding effect */
+
+}
+
+.slide {
+width: 100%;  /* Make each image take up the full width of the container */
+height: auto;  /* Maintain aspect ratio */
+}
+ 
+
+button {
+position: absolute;
+top: 50%;
+padding: 10px;
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+border: none;
+cursor: pointer;
+z-index: 100;
+transition: opacity 0.4;
+}
+
+button:hover {
+background-color: rgba(0, 0, 0, 0.8);
+
+
+}
+
+.prev {
+left: 10px;
+transform: translateY(-50%);
+}
+
+.next {
+right: 10px;
+transform: translateY(-50%);
+}
+    /* Navbar Styles */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;        
+        padding: 10px 20px;
+        z-index: 1000;
+    }
+
+    .navbar .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .navbar .menu {
+        display: flex;
+        gap: 20px;
+    }
+
+    .navbar .menu a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .navbar .menu a:hover {
+        color: #ff6600;
+    }
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        margin-right:30px;
+         
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .navbar .menu {
+            display: none;
+            flex-direction: column;
+            background-color: #333;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        .navbar .menu.active {
+            display: flex;
+        }
+
+         .hamburger {
+            display: flex;
+        }
+    }
+    .home-H {
+        text-align:center;
+        color:white;
+    }
+    .about-A {
+        text-align:center;
+        color:white;
+    }
+    .services-B {
+        text-align:center;
+        color:white;
+    }
+    .contact-X {
+        text-align:center;
+        color:white;
+    }
+ 
